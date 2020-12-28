@@ -30,7 +30,6 @@ const getProcessedVersionStrings = ( version ) => {
 
 var compareVersion = function(version1, version2) {
     
-    
     const vbuf1 = getProcessedVersionStrings(version1);
     const vbuf2 = getProcessedVersionStrings(version2);
 
@@ -50,4 +49,4 @@ var compareVersion = function(version1, version2) {
             return parseInt(vbuf1[idx]) > parseInt(vbuf2[idx]) ? 1 : -1
     }
     return 0;
-};
+}
